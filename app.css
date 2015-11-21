@@ -1,0 +1,114 @@
+#filter-library {
+  float: right;
+  width: 200px;
+  position: relative;
+  top: 5px;
+}
+
+/*#play-button {
+  animation: shake 0.82s;
+}*/
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+@keyframes dance {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    40% {
+      transform: translate3d(30px, -30px, 0);
+    }
+    60% {
+      transform: translate3d(-15px, -15px, 0);
+    }
+}
+
+
+
+ul {
+  list-style:none;
+  padding-left: 0;
+  min-height: 150px;
+  border: 2px dashed #282828;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+li {
+  border-color: #282828;
+  margin-bottom: 20px;
+  background-color: #222222;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+li:hover {
+  background-color: #333333;
+}
+
+li .fa-bars {
+  margin-right: 10px;
+  cursor: move;
+}
+
+li .fa-trash {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+li:hover .fa-trash{
+  opacity: 1;
+}
+
+li .notes {
+  margin-left: 22px;
+  margin-top: 10px;
+  display: block;
+  background-color: #444;
+  color: #999;
+  padding: 5 12px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.alert {
+  margin-top: 20px;
+  display: none;
+  text-align: center;
+}
+
+#song-form input[name="notes"] {
+  max-width: 500px;
+  margin-right: 1em;
+  float: left;
+}
+
+#song-form input[name="name"] {
+  max-width: 500px;
+  margin-right: 1em;
+  float: left;
+}
